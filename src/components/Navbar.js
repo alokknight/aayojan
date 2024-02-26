@@ -29,8 +29,8 @@ class Navbar extends React.Component{
                             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                             </ul>
 
-                            <React.Fragment>                                        
-                                    <NavLink className="nav-item nav-link" to="/">Home</NavLink>
+                            <React.Fragment>
+                                    <NavLink className="nav-item nav-link" to="/aayojan">Home</NavLink>
                                     <NavLink className="nav-item nav-link" to="/about">About Us</NavLink>
                                     <Link to="EventSched" className="nav-item nav-link" spy={true} offset={-50} smooth = {true} duration={500}>Events</Link>
                                     <NavLink className="nav-item nav-link" to="/contactus">Contact Us</NavLink>
