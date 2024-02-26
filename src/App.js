@@ -45,7 +45,7 @@ class App extends React.Component {
     return (
     <div>
       <Routes>
-        <Route exact path="/" element = {<Home />} />
+        <Route exact path="/aayojan" element = {<Home />} />
         <Route path="/about" element = {<About/>} />
         <Route path="/Extra" element = {<Extra/>} />
         <Route path='/upcoming' element={<Esd2/>}/>
