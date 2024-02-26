@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/aayojan/static/css/main.3c93217f.css",
+    "main.js": "/aayojan/static/js/main.699f81b2.js",
+    "static/js/787.c4e7f8f9.chunk.js": "/aayojan/static/js/787.c4e7f8f9.chunk.js",
+    "static/media/meeting.jpg": "/aayojan/static/media/meeting.aeda9406b39f018327b2.jpg",
+    "static/media/mmmut.jpg": "/aayojan/static/media/mmmut.87e00d71656fde5d3c24.jpg",
+    "static/media/Prashant.jpg": "/aayojan/static/media/Prashant.ba1e254221c06c5bc169.jpg",
+    "static/media/mmmut ven.jpg": "/aayojan/static/media/mmmut ven.50fef3fe52a38d6fa74a.jpg",
+    "static/media/about-bg.jpg": "/aayojan/static/media/about-bg.715c47a3ee8ea29a00ed.jpg",
+    "static/media/logo-wbg.png": "/aayojan/static/media/logo-wbg.5891a0076728e148dbbe.png",
+    "static/media/Shikhar.jpg": "/aayojan/static/media/Shikhar.151c0ab5e471ce8b5167.jpg",
+    "static/media/Alok.jpg": "/aayojan/static/media/Alok.cf2d51a49f9fa1132ee5.jpg",
+    "index.html": "/aayojan/index.html",
+    "main.3c93217f.css.map": "/aayojan/static/css/main.3c93217f.css.map",
+    "main.699f81b2.js.map": "/aayojan/static/js/main.699f81b2.js.map",
+    "787.c4e7f8f9.chunk.js.map": "/aayojan/static/js/787.c4e7f8f9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3c93217f.css",
+    "static/js/main.699f81b2.js"
+  ]
+}
