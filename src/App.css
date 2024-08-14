@@ -1,0 +1,687 @@
+Link{
+  text-decoration: none;
+}
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/**************************************************************
+                login start here
+**************************************************************/
+
+@import url('https://fonts.googleapis.com/css?family=Numans');
+
+html,body{
+/* background-image: url('http://getwallpapers.com/wallpaper/full/a/5/d/544750.jpg'); */
+/* background: #2f363e; */
+background: #606d7a;
+background-size: cover;
+background-repeat: no-repeat;
+height: 100%;
+font-family: 'Numans', sans-serif;
+}
+
+.container{
+height: 100%;
+align-content: center;
+}
+
+.col >img{
+  max-width:200px !important;
+  height: auto;
+  transition: all 0.3s ease 0s!important;
+  width: 100%!important;
+
+}
+
+.col >img:hover{
+  transform: scale(1.1)!important;
+}
+.registercard{
+  height: 550px;
+  margin-top: 1%;
+  margin-bottom: 1.5%;
+  width: 500px;
+  background-image:linear-gradient(83deg, #e64583, #310785,#e64583)!important;
+  box-shadow: inset 0 0 20px #070606;
+
+background-size: 200%;
+background-position: left;
+  }
+.registercard:hover{
+  background-position: right;
+  }
+
+.signincard{
+  height: 400px;
+  margin-top:4%;
+  margin-bottom: 5%;
+  width: 500px;
+  background-image:linear-gradient(83deg, #e64583, #410bad,#e64583)!important;
+  background-size: 200%;
+  background-position: left;
+}
+.signincard:hover{
+  background-position: right;
+}
+
+@media (max-width: 420px) {
+  .signincard{
+    /* margin-top: 25%; */
+    width: 100%!important;
+    height: 100%!important;
+  }
+}
+.signincard-header h3{
+  color: white;
+  }
+  @media (max-width: 991px) {
+    .signincard {
+      top: 20px;
+    }
+  }
+
+  @media (max-width: 420px) {
+      .signincard {
+      top: 15%;
+    }
+  }
+
+@media (max-width: 420px) {
+  .registercard{
+    margin-top: 10%;
+    width: 100%!important;
+    height: 100%!important;
+  }
+}
+.social_icon span{
+font-size: 60px;
+margin-right: 10%;
+color: #161614;
+}
+
+.social_icon span:hover{
+color: white;
+cursor: pointer;
+}
+
+
+.social_icon{
+position: absolute;
+right: 10px;
+top: -55px;
+}
+
+/* .input-group-prepend span{
+width: 50px;
+background-color: #FFC312;
+color: black;
+border:0 !important;
+} */
+
+input:focus{
+outline: 0 0 0 0  !important;
+box-shadow: 0 0 0 0 !important;
+
+}
+
+.login_btn{
+color: black;
+background-color: #28c516;
+/* width: 80px; */
+}
+
+.login_btn:hover{
+color: black;
+background-color: rgb(176, 235, 13);
+}
+
+
+.links{
+color: white;
+}
+
+.links a{
+margin-left: 4px;
+}
+
+
+
+/**************************************************************
+                login end here
+**************************************************************/
+
+
+/**************************************************************
+                # About Section start here
+**************************************************************/
+
+  #about {
+    background: url("./components/Images/about-bg.jpg");
+    background-size: cover;
+    overflow: hidden;
+    position: relative;
+    color: #fff;
+    padding: 60px 0 40px 0;
+  }
+
+  @media (min-width: 1024px) {
+    #about {
+      background-attachment: fixed;
+    }
+  }
+
+  #about:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+
+  #about h2 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #fff;
+  }
+
+  #about h3 {
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    color: #fff;
+  }
+
+  #about p {
+    font-size: 14px;
+    margin-bottom: 20px;
+    color: #fff;
+  }
+
+
+
+/**************************************************************
+                # About Section end here
+**************************************************************/
+
+/**************************************************************
+                # Gallary Section start here
+**************************************************************/
+
+
+/* Gallery */
+
+#carouselExampleControls{
+  margin: 0 9%;
+}
+.carousel-inner {
+  padding: 1em;
+}
+.card {
+  margin: 0 0.5em;
+  box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+  border: none;
+  height: 17em;
+}
+.carousel-control-prev,
+.carousel-control-next {
+  background-color: #000000;
+  width: 6vh;
+  height: 6vh;
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+@media (min-width: 768px) {
+  .carousel-item {
+    margin-right: 0;
+    flex: 0 0 23.333333%;
+    display: block;
+  }
+  .carousel-inner {
+    display: flex;
+  }
+}
+.card .img-wrapper {
+    max-width: 100%;
+    height: 13em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card img {
+    max-height: 100%;
+}
+@media (max-width: 767px) {
+  .card .img-wrapper {
+    height: 13em;
+  }
+  .card{
+    margin: 0;
+    width: 100%;
+  }
+  #carouselExampleControls{
+    margin: 0 2%;
+  }
+}
+
+
+
+/**************************************************************
+                # Gallary Section end here
+**************************************************************/
+
+
+/**************************************************************
+                # Sponsers Section  starts here
+**************************************************************/
+
+
+#sponsers{
+  margin: 34px;
+  display: flex;
+}
+#sponsers .box{
+  border: 2px solid brown;
+  padding: 34px;
+  margin: 2px 20px;
+  border-radius: 28px;
+  background: #f2f2f2;
+  margin-bottom: 20px;
+}
+.sponser-img img{
+  height: 50%;
+  margin: auto;
+  display: block;
+}
+#sponsers .box img{
+  height: 80px;
+  margin: auto;
+  display: block;
+}
+
+#sponsers .box p{
+  font-family: 'Bree Serif', serif;
+
+}
+
+
+/**************************************************************
+                sponsers Section end here
+**************************************************************/
+#transZ>
+img:hover {
+    transform: perspective(100px) translateZ(5px);
+  }
+
+
+/**************************************************************
+                Clients Section start here
+**************************************************************/
+
+#client-section{
+  /* background: url("./components/Images/bg.jpg"); */
+  position: relative;
+}
+
+#client-section::before{
+content: "";
+position: absolute;
+
+width: 100%;
+height: 100%;
+z-index: -1;
+opacity: 0.3;
+}
+
+#clients{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.client-item{
+  padding: 34px;
+}
+
+#clients img{
+  height: 200px;
+  width: 200px;
+  margin: 10px;
+}
+
+#form-box{
+  text-align: center;
+  justify-content: center;
+}
+
+  /*--------------------------------------------------------------
+  # client Section
+  --------------------------------------------------------------*/
+  #client {
+    /* padding: 60px; */
+    overflow: hidden;
+  }
+
+  #client .owl-nav, #client .owl-dots {
+    margin-top: 25px;
+    text-align: center;
+  }
+
+  #client .owl-item {
+    border-left: 2px solid #fff;
+    border-right: 2px solid #fff;
+  }
+
+  #client .owl-dot {
+    display: inline-block;
+    margin: 0 5px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #ddd;
+  }
+
+  #client .owl-dot.active {
+    background-color: #f82249;
+  }
+
+  #client .client-carousel .owl-stage-outer {
+    overflow: visible;
+  }
+
+  #client .client-carousel .center {
+    border: 6px solid #f82249;
+    margin: -10px;
+    box-sizing: content-box;
+    padding: 4px;
+    background: #fff;
+    z-index: 1;
+  }
+
+
+
+/**************************************************************
+                client end here
+**************************************************************/
+
+
+/**************************************************************
+                section header start here
+**************************************************************/
+  .section-header {
+    margin-bottom: 60px;
+    position: relative;
+    padding-bottom: 20px;
+  }
+
+  .section-header::before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 60px;
+    height: 5px;
+    background: #f82249;
+    bottom: 0;
+    left: calc(50% - 25px);
+  }
+
+  .section-header h2 {
+    font-size: 36px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+
+  .section-header p {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    font-size: 18px;
+    font-weight: 500;
+    color: #9195a2;
+  }
+
+  .section-with-bg {
+    background-color: #f6f7fd;
+  }
+/**************************************************************
+                section header end here
+**************************************************************/
+
+
+/**************************************************************
+                footer start here
+**************************************************************/
+#footer {
+  background: #101522;
+  padding: 0 0 25px 0;
+  color: #eee;
+  font-size: 14px;
+}
+
+#footer .footer-top {
+  background: #040919;
+  padding: 60px 0 30px 0;
+}
+
+#footer .footer-top .footer-info {
+  margin-bottom: 30px;
+}
+
+#footer .footer-top .footer-info h3 {
+  font-size: 26px;
+  margin: 0 0 20px 0;
+  padding: 2px 0 2px 0;
+  line-height: 1;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  color: #fff;
+}
+
+#footer .footer-top .footer-info img {
+  height: 40px;
+  margin-bottom: 10px;
+}
+
+#footer .footer-top .footer-info p {
+  font-size: 14px;
+  line-height: 24px;
+  margin-bottom: 0;
+  font-family: "Raleway", sans-serif;
+  color: #fff;
+}
+
+#footer .footer-top .social-links a {
+  font-size: 18px;
+  display: inline-block;
+  background: #222636;
+  color: #eee;
+  line-height: 1;
+  padding: 8px 0;
+  margin-right: 4px;
+  border-radius: 50%;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  transition: 0.3s;
+}
+
+#footer .footer-top .social-links a:hover {
+  background: #f82249;
+  color: #fff;
+}
+
+#footer .footer-top h4 {
+  font-size: 14px;
+  font-weight: bold;
+  color: #fff;
+  text-transform: uppercase;
+  position: relative;
+  padding-bottom: 12px;
+  border-bottom: 2px solid #f82249;
+}
+
+#footer .footer-top .footer-links {
+  margin-bottom: 30px;
+}
+
+#footer .footer-top .footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#footer .footer-top .footer-links ul i {
+  padding-right: 5px;
+  color: #f82249;
+  font-size: 18px;
+}
+
+#footer .footer-top .footer-links ul li {
+  border-bottom: 1px solid #262c44;
+  padding: 10px 0;
+}
+
+#footer .footer-top .footer-links ul li:first-child {
+  padding-top: 0;
+}
+
+#footer .footer-top .footer-links ul a {
+  color: #eee;
+}
+
+#footer .footer-top .footer-links ul a:hover {
+  color: #f82249;
+}
+
+#footer .footer-top .footer-contact {
+  margin-bottom: 30px;
+}
+
+#footer .footer-top .footer-contact p {
+  line-height: 26px;
+}
+
+#footer .footer-top .footer-newsletter {
+  margin-bottom: 30px;
+}
+
+#footer .footer-top .footer-newsletter input[type="email"] {
+  border: 0;
+  padding: 6px 8px;
+  width: 65%;
+}
+
+#footer .footer-top .footer-newsletter input[type="submit"] {
+  background: #f82249;
+  border: 0;
+  width: 35%;
+  padding: 6px 0;
+  text-align: center;
+  color: #fff;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+#footer .footer-top .footer-newsletter input[type="submit"]:hover {
+  background: #e0072f;
+}
+
+#footer .copyright {
+  text-align: center;
+  padding-top: 30px;
+}
+
+#footer .credits {
+  text-align: center;
+  font-size: 13px;
+  color: #ddd;
+}
+
+
+/**************************************************************
+                footer end here
+**************************************************************/
+
+/* Event Add */
+@media (min-width: 1025px) {
+  .h-custom {
+    height: 100vh !important;
+  }
+}
+.card-registration .select-input.form-control[readonly]:not([disabled]) {
+  font-size: 1rem;
+  line-height: 2.15;
+  padding-left: .75em;
+  padding-right: .75em;
+}
+.card-registration .select-arrow {
+  top: 13px;
+}
+
+.gradient-custom-2 {
+  /* fallback for old browsers */
+  background: #a1c4fd;
+
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-linear-gradient(to right, rgba(161, 196, 253, 1), rgba(194, 233, 251, 1));
+
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(to right, rgba(161, 196, 253, 1), rgba(194, 233, 251, 1))
+}
+
+.bg-indigo {
+  background-color: #4835d4;
+}
+@media (min-width: 992px) {
+  .card-registration-2 .bg-indigo {
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+  }
+}
+@media (max-width: 991px) {
+  .card-registration-2 .bg-indigo {
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+  }
+}
