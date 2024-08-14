@@ -12,7 +12,7 @@ function ChangePassword() {
 
   const onSubmitHandler = e =>{
     e.preventDefault();
-    axios.put(`/api/password/reset/${id}/${token}`, ChangePass)
+    axios.put(`https://aayojanserver.onrender.com/api/password/reset/${id}/${token}`, ChangePass)
     .then(res => {
       alert('Password has been changed successfully')
       Navigate("/signin");

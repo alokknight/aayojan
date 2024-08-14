@@ -9,7 +9,7 @@ function EventShow({match}) {
   const [event, setEvent] = useState({})
   const Navigate = useNavigate();
   useEffect(()=>{
-    axios.get(`/api/event/${eName}`)
+    axios.get(`https://aayojanserver.onrender.com/api/event/${eName}`)
     .then(res => setEvent(res.data))
     .catch(err =>{
       console.log(err, 'Event not found react')
@@ -37,7 +37,7 @@ function EventShow({match}) {
             {event.mobNo}<br></br>
             Contact email: {event.email}<br></br>
         </>
-        ): null}      
+        ): null}
         <Footer/>
     </div>
   )

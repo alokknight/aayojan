@@ -16,7 +16,7 @@ export default function Esd3() {
     const [pastEvents, setPastEvents] = useState([])
 
     useEffect(() => {
-        axios.get('/api/event/past')
+        axios.get('https://aayojanserver.onrender.com/api/event/past')
             .then(res => setPastEvents(res.data))
             .catch(err => console.log(err.error))
     }, [])

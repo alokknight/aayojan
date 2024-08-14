@@ -16,7 +16,7 @@ export default function Esd2() {
     const [upcomingEvents, setUpcomingEvents] = useState([])
 
     useEffect(() => {
-        axios.get('/api/event/upcoming')
+        axios.get('https://aayojanserver.onrender.com/api/event/upcoming')
             .then(res => setUpcomingEvents(res.data))
             .catch(err => console.log(err.error))
     }, [])

@@ -8,7 +8,7 @@ export default function Esd1() {
     const [todayEvents, setTodayEvents] = useState([])
 
     useEffect(() => {
-        axios.get('/api/event/today')
+        axios.get('https://aayojanserver.onrender.com/api/event/today')
             .then(res => setTodayEvents(res.data))
             .catch(err => console.log(err.error))
     }, [])

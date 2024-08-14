@@ -12,14 +12,14 @@ function Updateprofile() {
     const [profile, setProfile] = useState({});
     const Navigate = useNavigate();
     useEffect(()=>{
-        axios.get(`/api/signin/${decode.email}`)
+        axios.get(`https://aayojanserver.onrender.com/api/signin/${decode.email}`)
         .then(res => setProfile(res.data))
         .catch(err => console.log(err.message))
     },[])
 
     const onSubmitHandler = (e) =>{
         e.preventDefault();
-        axios.put(`/api/signup/update/${decode.email}`, profile, {
+        axios.put(`https://aayojanserver.onrender.com/api/signup/update/${decode.email}`, profile, {
             headers: {
                 'Authorization': `Bearer ${userToken}`,
                 'Content-Type': 'application/json'
@@ -75,7 +75,7 @@ function Updateprofile() {
                                                 <h6 className="mb-0" style={{ color: "blue" }}><i className="fa fa-linkedin rotate360 mx-2"></i>Linkedin</h6>
                                                 <input className="form-control" onChange={e => setProfile({...profile, linkedin: e.target.value})} value={profile.linkedin} />
                                             </li>
-                                            
+
                                             <li className="list-group-item d-flex justify-content-between align-items-center flex-wrap bg-transparent">
                                                 <h6 className="mb-0" style={{ color: "black" }}><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="mx-1 feather feather-github mr-2 icon-inline"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>Github</h6>
                                                 <input className="form-control" onChange={e => setProfile({...profile, github: e.target.value})} value={profile.github} />

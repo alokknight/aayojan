@@ -12,12 +12,12 @@ export default function Event({ match }) {
     const { eName } = useParams()
     const [event, setEvent] = useState({})
     const [notifyEmail, setNotifyEmail] = useState();
-    
+
 
     // console.log(notifyEmail)
     const Navigate = useNavigate();
     useEffect(() => {
-        axios.get(`/api/event/${eName}`)
+        axios.get(`https://aayojanserver.onrender.com/api/event/${eName}`)
             .then(res => setEvent(res.data))
             .catch(err => {
                 console.log(err, 'Event not found react')
@@ -26,7 +26,7 @@ export default function Event({ match }) {
 
     const onSubmitHandler = e =>{
         e.preventDefault();
-        axios.post(`/api/notify/${eName}/${notifyEmail}`)
+        axios.post(`https://aayojanserver.onrender.com/api/notify/${eName}/${notifyEmail}`)
         .then(()=> alert('Event Scheduled'))
         .catch(()=> alert('Some Error Occured'))
     }
@@ -110,12 +110,12 @@ export default function Event({ match }) {
                                         </div>
                                     </div> */}
                                 </div>
-                                </div>  
+                                </div>
                             </div>
                             <div className='col-lg-8'>
                             <div class="profilecard video-container">
                                 <div className='profilecard-body'>
-                                    <iframe 
+                                    <iframe
                                             src={`${video}`}
                                             frameborder="0"
                                             allow="autoplay; encrypted-media"
@@ -125,7 +125,7 @@ export default function Event({ match }) {
                             </div>
                             </div>
                         </div>
-                        
+
                         {/* <div className="list-container col-lg-3 col-sm-6 mb-3">
 
                             <div id="list">

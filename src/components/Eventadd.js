@@ -63,7 +63,7 @@ class EventAdd extends React.Component {
     //       email: this.state.email
     //   })
     // })
-    axios.post('/api/event/add', {
+    axios.post('https://aayojanserver.onrender.com/api/event/add', {
       eTitle: this.state.eTitle,
       eName: this.state.eName,
       eOrganiser: this.state.eOrganiser,
@@ -157,7 +157,7 @@ class EventAdd extends React.Component {
                             }} onChange={this.ckEditorHandler} name="eBody" config={
                               {
                                 ckfinder:{
-                                  uploadUrl: '/api/uploads',
+                                  uploadUrl: 'https://aayojanserver.onrender.com/api/uploads',
                                   withCredentials: true,
                                   headers: {
                                     'X-CSRF-TOKEN': 'CSFR-Token',

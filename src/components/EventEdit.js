@@ -20,7 +20,7 @@ function EventEdit({ match }) {
   const [Event, setEvent] = useState({})
   // const [redirect, setRedirect] = useState(false);
   useEffect(() => {
-    axios.get(`/api/event/${eName}`)
+    axios.get(`https://aayojanserver.onrender.com/api/event/${eName}`)
       .then(res => {
         setEvent(res.data)
         if (res.data.userEmail !== decoded.email)
@@ -35,7 +35,7 @@ function EventEdit({ match }) {
 
   const onSubmitHandler = e => {
     e.preventDefault();
-    axios.put(`/api/event/${eName}`, Event, {
+    axios.put(`https://aayojanserver.onrender.com/api/event/${eName}`, Event, {
       headers: {
         'Authorization': `Bearer ${userToken}`,
         'Content-Type': 'application/json'
@@ -103,7 +103,7 @@ function EventEdit({ match }) {
                               name="eBody" config={
                                 {
                                   ckfinder: {
-                                    uploadUrl: '/api/uploads',
+                                    uploadUrl: 'https://aayojanserver.onrender.com/api/uploads',
                                     withCredentials: true,
                                     headers: {
                                       'X-CSRF-TOKEN': 'CSFR-Token',

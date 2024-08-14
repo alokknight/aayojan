@@ -17,14 +17,14 @@ function Dashboard() {
         edit: ''
     });
     useEffect(()=>{
-        axios.get(`/api/signin/${decode.email}`)
+        axios.get(`https://aayojanserver.onrender.com/api/signin/${decode.email}`)
         .then(res => setProfile(res.data))
         .catch(err => console.log(err.message))
     },[])
 
     console.log("Profile-",profile)
     useEffect(() => {
-        axios.get('/api/event', {
+        axios.get('https://aayojanserver.onrender.com/api/event', {
             headers: {
                 'Authorization': `Bearer ${token}`,
                 'content-type': 'application/json'
